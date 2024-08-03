@@ -33,7 +33,7 @@
 
                                     <form wire:submit="login">
 
-                                        <label class="mb-2 ml-1 font-bold text-size-xs text-slate-700">Email</label>
+                                        <label class="mb-2 ml-1 font-bold text-size-xs text-slate-700">{{ __('Email') }}</label>
                                         <div class="mb-4">
                                             <input wire:model.blur="email" type="email"
                                                 class="focus:shadow-soft-primary-outline text-size-sm leading-5.6 ease-soft block w-full appearance-none rounded-lg border border-solid border-gray-300 bg-white bg-clip-padding px-3 py-2 font-normal text-gray-700 transition-all focus:border-fuchsia-300 focus:outline-none focus:transition-shadow"
@@ -43,7 +43,7 @@
                                         @error('email')
                                         <p class="text-size-sm text-red-500">{{ $message }}</p>
                                         @enderror
-                                        <label class="mb-2 ml-1 font-bold text-size-xs text-slate-700">Password</label>
+                                        <label class="mb-2 ml-1 font-bold text-size-xs text-slate-700">{{ __('Password') }}</label>
                                         <div class="mb-4">
                                             <input wire:model.blur="password" type="password"
                                                 class="focus:shadow-soft-primary-outline text-size-sm leading-5.6 ease-soft block w-full appearance-none rounded-lg border border-solid border-gray-300 bg-white bg-clip-padding px-3 py-2 font-normal text-gray-700 transition-all focus:border-fuchsia-300 focus:outline-none focus:transition-shadow"
@@ -74,10 +74,10 @@
                                 <div
                                     class="p-6 px-1 pt-0 text-center bg-transparent border-t-0 border-t-solid rounded-b-2xl lg:px-2">
                                     <p class="mx-auto mb-6 leading-normal text-size-sm">
-                                        Forgot your password? Reset your password
+                                        {{ __('Forgot Your Password?') }} {{ __('Reset your password') }}
                                         <a href="{{ route('forgot-password') }}"
-                                            class="relative z-10 font-semibold text-transparent bg-gradient-cyan bg-clip-text">here</a>.<br />
-                                        Don't have an account?
+                                            class="relative z-10 font-semibold text-transparent bg-gradient-cyan bg-clip-text">{{ __('here') }}</a>.<br />
+                                        {{ __('Don\'t have an account?') }}
                                         <a href="{{ route('register') }}"
                                             class="relative z-10 font-semibold text-transparent bg-gradient-cyan bg-clip-text">Sign
                                             up</a>.
