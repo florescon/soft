@@ -59,6 +59,9 @@
     @vite('resources/css/app.css')
 
     @livewireStyles
+
+    @stack('after-styles')
+
 </head>
 
 <body class="m-0 font-sans antialiased font-normal text-size-base leading-default bg-gray-50 text-slate-500">
@@ -75,5 +78,7 @@
 <script async defer src="https://buttons.github.io/buttons.js"></script>
 <!-- main script file  -->
 <script src="{{ asset('assets') }}/js/soft-ui-dashboard-tailwind.js?v=1.0.3" async></script>
+
+@stack('after-scripts')
 
 </html>

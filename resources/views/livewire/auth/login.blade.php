@@ -10,11 +10,9 @@
                                 class="relative flex flex-col min-w-0 mt-32 break-words bg-transparent border-0 shadow-none rounded-2xl bg-clip-border">
                                 <div class="p-6 pb-0 mb-0 bg-transparent border-b-0 rounded-t-2xl">
                                     <h3 class="relative z-10 font-bold text-transparent bg-gradient-cyan bg-clip-text">
-                                        Welcome back!</h3>
-                                    <p class="mb-0">Create a new acount<br></p>
-                                    <p class="mb-0">OR Sign in with these credentials:</p>
-                                    <p class="mb-0">Email: <b>admin@softui.com</b></p>
-                                    <p class="mb-0">Password: <b>secret</b></p>
+                                        {{ __('Welcome back!') }}</h3>
+                                    <p class="mb-0">{{ __('Email') }}: <b>admin@softui.com</b></p>
+                                    <p class="mb-0">{{ __('Password') }}: <b>secret</b></p>
                                 </div>
 
                                 <div class="flex-auto p-6">
@@ -66,8 +64,8 @@
                                         </div>
                                         <div class="text-center">
                                             <button type="submit"
-                                                class="inline-block w-full px-6 py-3 mt-6 mb-0 font-bold text-center text-white uppercase align-middle transition-all bg-transparent border-0 rounded-lg cursor-pointer shadow-soft-md bg-x-25 bg-150 leading-pro text-size-xs ease-soft-in tracking-tight-soft bg-gradient-cyan hover:scale-102 hover:shadow-soft-xs active:opacity-85">Sign
-                                                in</button>
+                                                class="inline-block w-full px-6 py-3 mt-6 mb-0 font-bold text-center text-white uppercase align-middle transition-all bg-transparent border-0 rounded-lg cursor-pointer shadow-soft-md bg-x-25 bg-150 leading-pro text-size-xs ease-soft-in tracking-tight-soft bg-gradient-cyan hover:scale-102 hover:shadow-soft-xs active:opacity-85">{{ __('Sign In') }}
+                                                </button>
                                         </div>
                                     </form>
                                 </div>
@@ -79,8 +77,9 @@
                                             class="relative z-10 font-semibold text-transparent bg-gradient-cyan bg-clip-text">{{ __('here') }}</a>.<br />
                                         {{ __('Don\'t have an account?') }}
                                         <a href="{{ route('register') }}"
-                                            class="relative z-10 font-semibold text-transparent bg-gradient-cyan bg-clip-text">Sign
-                                            up</a>.
+                                            class="relative z-10 font-semibold text-transparent bg-gradient-cyan bg-clip-text">
+                                            {{ __('Sign Up') }}
+                                        </a>.
                                     </p>
                                 </div>
                             </div>

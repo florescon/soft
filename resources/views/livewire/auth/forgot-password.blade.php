@@ -9,8 +9,8 @@
                             class="relative flex flex-col min-w-0 mt-32 break-words bg-transparent border-0 shadow-none rounded-2xl bg-clip-border">
                             <div class="p-6 pb-0 mb-0 bg-transparent border-b-0 rounded-t-2xl">
                                 <h3 class="relative z-10 font-bold text-transparent bg-gradient-cyan bg-clip-text">
-                                    Forgot password</h3>
-                                <p class="mb-0">Forgot your password? <br />Enter your email below!</p>
+                                    {{ __('Forgot password') }}</h3>
+                                <p class="mb-0">{{ __('Forgot your password?') }} <br />{{ __('Enter your email below!') }}</p>
                             </div>
 
                             <div class="flex-auto p-6">
@@ -56,7 +56,7 @@
                                         <input wire:model.blur="email" type="email" id="email"
                                             class="
                                             focus:shadow-soft-primary-outline text-size-sm leading-5.6 ease-soft block w-full appearance-none rounded-lg border border-solid border-gray-300 bg-white bg-clip-padding px-3 py-2 font-normal text-gray-700 transition-all focus:border-fuchsia-300 focus:outline-none focus:transition-shadow"
-                                            placeholder="Email" name="email" aria-label="Email"
+                                            placeholder="{{ __('Email') }}" name="email" aria-label="Email"
                                             aria-describedby="email-addon" required autofocus />
                                         @error('email')
                                         <p class="text-size-sm text-red-500">{{ $message }}</p>
@@ -66,7 +66,7 @@
                                     <div class="text-center">
                                         <button type="submit"
                                             class="inline-block w-full px-6 py-3 mt-6 mb-0 font-bold text-center text-white uppercase align-middle transition-all bg-transparent border-0 rounded-lg cursor-pointer shadow-soft-md bg-x-25 bg-150 leading-pro text-size-xs ease-soft-in tracking-tight-soft bg-gradient-cyan hover:scale-102 hover:shadow-soft-xs active:opacity-85">
-                                            Email Password Reset Link</button>
+                                            {{ __('Email Password Reset Link') }}</button>
                                     </div>
                                 </form>
 

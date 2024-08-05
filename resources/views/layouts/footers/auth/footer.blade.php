@@ -7,12 +7,7 @@
                     <script>
                         document.write(new Date().getFullYear() + ",");
                     </script>
-                    made with <i class="fa fa-heart"></i> by
-                    <a href="https://www.creative-tim.com" class="font-semibold text-slate-700" target="_blank">Creative
-                        Tim</a>
-                    & <a href="https://updivision.com" class="font-semibold text-slate-700"
-                        target="_blank">UPDIVISION</a>
-                    for a better web.
+                    {{ __('Made with') }} ❤️
                 </div>
             </div>
             <div class="w-full max-w-full px-3 mt-0 shrink-0 lg:w-1/2 lg:flex-none">

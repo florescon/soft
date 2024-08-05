@@ -12,4 +12,9 @@ class Food extends Model
     protected $fillable = [
         'name',
     ];
+
+    public function getCreatedAtForHumansAttribute()
+    {
+        return $this->created_at->format("d, m, y");
+    }
 }

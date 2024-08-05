@@ -1,12 +1,12 @@
 <?php
 
-namespace App\Http\Livewire\LaravelExamples;
+namespace App\Http\Livewire;
 
 use Livewire\WithPagination;
 use Livewire\Component;
-use App\Models\User;
+use App\Models\Ingredient;
 
-class UserManagement extends Component
+class Ingredients extends Component
 {
     use WithPagination;
 
@@ -29,17 +29,17 @@ class UserManagement extends Component
         $this->resetPage();
     }
  
-    public function destroy(User $user)
+    public function destroy(Ingredient $ingredient)
     {
-        if($user){
-            $user->delete();
+        if($ingredient){
+            $ingredient->delete();
         }
     }
 
     public function render()
     {
-        return view('livewire.laravel-examples.user-management',[
-            'users' => User::where('name', 'like', '%'.$this->search.'%')->paginate($this->perPage),
+        return view('livewire.ingredients',[
+            'ingredients' => Ingredient::where('name', 'like', '%'.$this->search.'%')->paginate($this->perPage),
         ]);
     }
 }

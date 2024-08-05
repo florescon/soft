@@ -7,10 +7,10 @@
             <div class="container z-10">
                 <div class="flex flex-wrap justify-center -mx-3">
                     <div class="w-full max-w-full px-3 mx-auto mt-0 text-center lg:flex-0 shrink-0 lg:w-5/12">
-                        <h1 class="mt-12 mb-2 text-white">Welcome!</h1>
-                        <p class="text-white">Use these awesome forms to login or create new account in your project
-                            for
-                            free.</p>
+                        <h1 class="mt-12 mb-2 text-white">{{ __('Welcome!') }}</h1>
+                        <p class="text-white">
+                            {{ __('Use these awesome forms to login or create new account in your project for free') }}
+                        </p>
                     </div>
                 </div>
             </div>
@@ -21,7 +21,7 @@
                     <div
                         class="relative z-0 flex flex-col min-w-0 break-words bg-white border-0 shadow-soft-xl rounded-2xl bg-clip-border">
                         <div class="p-6 mb-0 text-center bg-white border-b-0 rounded-t-2xl">
-                            <h5>Register with</h5>
+                            <h5>{{ __('Register with') }}</h5>
                         </div>
                         <div class="flex flex-wrap px-3 -mx-3 sm:px-6 xl:px-12">
                             <div class="w-3/12 max-w-full px-1 ml-auto flex-0">
@@ -131,17 +131,18 @@
                                         type="checkbox" value="" required>
                                     <label
                                         class="mb-2 ml-1 font-normal cursor-pointer select-none text-size-sm text-slate-700"
-                                        for="terms"> I agree the <a href="javascript:;"
-                                            class="font-bold text-slate-700">Terms and Conditions</a> </label>
+                                        for="terms"> {{ __('I agree the') }} <a href="javascript:;"
+                                            class="font-bold text-slate-700">{{ __('Terms and Conditions') }}</a> </label>
                                 </div>
 
                                 <div class="text-center">
                                     <button type="submit"
-                                        class="inline-block w-full px-6 py-3 mt-6 mb-2 font-bold text-center text-white uppercase align-middle transition-all bg-transparent border-0 rounded-lg cursor-pointer active:opacity-85 hover:scale-102 hover:shadow-soft-xs leading-pro text-size-xs ease-soft-in tracking-tight-soft shadow-soft-md bg-150 bg-x-25 bg-gradient-dark-gray hover:border-slate-700 hover:bg-slate-700 hover:text-white">Sign
-                                        up</button>
+                                        class="inline-block w-full px-6 py-3 mt-6 mb-2 font-bold text-center text-white uppercase align-middle transition-all bg-transparent border-0 rounded-lg cursor-pointer active:opacity-85 hover:scale-102 hover:shadow-soft-xs leading-pro text-size-xs ease-soft-in tracking-tight-soft shadow-soft-md bg-150 bg-x-25 bg-gradient-dark-gray hover:border-slate-700 hover:bg-slate-700 hover:text-white">
+                                        {{ __('Sign Up') }}
+                                    </button>
                                 </div>
                                 <p class="mt-4 mb-0 leading-normal text-size-sm">Already have an account? <a
-                                        href="{{ route('login') }}" class="font-bold text-slate-700">Sign in</a>
+                                        href="{{ route('login') }}" class="font-bold text-slate-700">{{ __('Sign In') }}</a>
                                 </p>
                             </form>
                         </div>

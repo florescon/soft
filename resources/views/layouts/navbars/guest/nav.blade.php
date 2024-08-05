@@ -57,7 +57,7 @@
                         {{ Request::is('static-sign-up') || Request::is('register') ? 'text-white' : 'text-slate-700' }}"
                             href="{{ auth()->user() ? url('static-sign-up') : url('register') }}">
                             <i class="mr-1 fas fa-user-circle opacity-60"></i>
-                            Sign Up
+                            {{ __('Sign Up') }}
                         </a>
                     </li>
                     <li>
@@ -65,7 +65,7 @@
                         {{ Request::is('static-sign-up') || Request::is('register') ? 'text-white' : 'text-slate-700' }}"
                             href="{{ auth()->user() ? url('static-sign-in') : url('login') }}">
                             <i class="mr-1 fas fa-key opacity-60"></i>
-                            Sign In
+                            {{ __('Sign In') }}
                         </a>
                     </li>
 

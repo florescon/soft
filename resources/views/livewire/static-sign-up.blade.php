@@ -108,11 +108,12 @@
                 </div>
                 <div class="text-center">
                   <button type="button"
-                    class="inline-block w-full px-6 py-3 mt-6 mb-2 font-bold text-center text-white uppercase align-middle transition-all bg-transparent border-0 rounded-lg cursor-pointer active:opacity-85 hover:scale-102 hover:shadow-soft-xs leading-pro text-size-xs ease-soft-in tracking-tight-soft shadow-soft-md bg-150 bg-x-25 bg-gradient-dark-gray hover:border-slate-700 hover:bg-slate-700 hover:text-white">Sign
-                    up</button>
+                    class="inline-block w-full px-6 py-3 mt-6 mb-2 font-bold text-center text-white uppercase align-middle transition-all bg-transparent border-0 rounded-lg cursor-pointer active:opacity-85 hover:scale-102 hover:shadow-soft-xs leading-pro text-size-xs ease-soft-in tracking-tight-soft shadow-soft-md bg-150 bg-x-25 bg-gradient-dark-gray hover:border-slate-700 hover:bg-slate-700 hover:text-white">
+                    {{ __('Sign Up') }}
+                  </button>
                 </div>
                 <p class="mt-4 mb-0 leading-normal text-size-sm">Already have an account? <a
-                    href="{{ url('static-sign-in') }}" class="font-bold text-slate-700">Sign in</a></p>
+                    href="{{ url('static-sign-in') }}" class="font-bold text-slate-700">{{ __('Sign In') }}</a></p>
               </form>
             </div>
           </div>
