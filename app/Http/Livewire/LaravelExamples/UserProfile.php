@@ -38,7 +38,7 @@ class UserProfile extends Component
 
         $this->user->save();
 
-        return back()->with('status', "Your profile information have been successfully saved!");
+        return back()->with('status', __("Your profile information have been successfully saved!"));
     }
     public function render()
     {

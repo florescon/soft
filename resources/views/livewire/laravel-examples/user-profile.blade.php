@@ -10,14 +10,14 @@
                 <div class="flex-none w-auto max-w-full px-3">
                     <div
                         class="text-size-base ease-soft-in-out h-18.5 w-18.5 relative inline-flex items-center justify-center rounded-xl text-white transition-all duration-200">
-                        <img src="../assets/img/bruce-mars.jpg" alt="profile_image"
+                        <img src="../assets/img/person.png" alt="profile_image"
                             class="w-full shadow-soft-sm rounded-xl" />
                     </div>
                 </div>
                 <div class="flex-none w-auto max-w-full px-3 my-auto">
                     <div class="h-full">
                         <h5 class="mb-1">{{ $user->name }}</h5>
-                        <p class="mb-0 font-semibold leading-normal text-size-sm">CEO / Co-Founder</p>
+                        <p class="mb-0 font-semibold leading-normal text-size-sm">Usuario</p>
                     </div>
                 </div>
                 <div class="w-full max-w-full px-3 mx-auto mt-4 sm:my-auto sm:mr-0 md:w-1/2 md:flex-none lg:w-4/12">
@@ -49,7 +49,7 @@
                                             </g>
                                         </g>
                                     </svg>
-                                    <span class="ml-1">App</span>
+                                    <span class="ml-1">Aplicación</span>
                                 </a>
                             </li>
                             <li class="z-30 flex-auto text-center">
@@ -75,7 +75,7 @@
                                             </g>
                                         </g>
                                     </svg>
-                                    <span class="ml-1">Messages</span>
+                                    <span class="ml-1">Mensajes</span>
                                 </a>
                             </li>
                             <li class="z-30 flex-auto text-center">
@@ -84,7 +84,7 @@
                                     <svg class="text-slate-700" width="16px" height="16px" viewBox="0 0 40 40"
                                         version="1.1" xmlns="http://www.w3.org/2000/svg"
                                         xmlns:xlink="http://www.w3.org/1999/xlink">
-                                        <title>settings</title>
+                                        <title>configuraciones</title>
                                         <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
                                             <g transform="translate(-2020.000000, -442.000000)" fill="#FFFFFF"
                                                 fill-rule="nonzero">
@@ -104,7 +104,7 @@
                                             </g>
                                         </g>
                                     </svg>
-                                    <span class="ml-1">Settings</span>
+                                    <span class="ml-1">Configuraciones</span>
                                 </a>
                             </li>
                         </ul>
@@ -119,7 +119,7 @@
             <div class="relative flex flex-col min-w-0 break-words bg-white shadow-soft-xl rounded-2xl bg-clip-border">
                 <div class="flex-auto p-4">
 
-                    <h5 class="font-bold py-3">Profile Information</h5>
+                    <h5 class="font-bold py-3">{{ __('Profile Information') }}</h5>
 
                     @if (Session::has('status'))
 
@@ -150,24 +150,24 @@
                         <div class="flex flex-wrap -mx-3">
                             <div class="max-w-full px-3 w-1/2 lg:flex-none">
                                 <div class="flex flex-col h-full">
-                                    <h6 class="font-bold leading-tight uppercase text-size-xs text-slate-500">Full name
+                                    <h6 class="font-bold leading-tight uppercase text-size-xs text-slate-500">{{ __('Full name') }}
                                     </h6>
 
                                     <div class="mb-4">
                                         <input wire:model.blur="user.name" type="text"
                                             class="text-size-sm focus:shadow-soft-primary-outline leading-5.6 ease-soft block w-full appearance-none rounded-lg border border-solid border-gray-300 bg-white bg-clip-padding py-2 px-3 font-normal text-gray-700 transition-all focus:border-fuchsia-300 focus:bg-white focus:text-gray-700 focus:outline-none focus:transition-shadow"
-                                            placeholder="Name" id="user-name" required />
+                                            placeholder="{{ __('Name') }}" id="user-name" required />
                                         @error('user.name') <p class="text-size-sm text-red-500">{{ $message }}</p>
                                         @enderror
                                     </div>
 
 
-                                    <h6 class="font-bold leading-tight uppercase text-size-xs text-slate-500">Email</h6>
+                                    <h6 class="font-bold leading-tight uppercase text-size-xs text-slate-500">{{ __('Email') }}</h6>
 
                                     <div class="mb-4">
                                         <input wire:model.blur="user.email" type="email"
                                             class="text-size-sm focus:shadow-soft-primary-outline leading-5.6 ease-soft block w-full appearance-none rounded-lg border border-solid border-gray-300 bg-white bg-clip-padding py-2 px-3 font-normal text-gray-700 transition-all focus:border-fuchsia-300 focus:bg-white focus:text-gray-700 focus:outline-none focus:transition-shadow"
-                                            placeholder="Email" id="user-email" required />
+                                            placeholder="{{ __('Email') }}" id="user-email" required />
                                         @error('user.email') <p class="text-size-sm text-red-500">{{ $message }}</p>
                                         @enderror
 
@@ -178,26 +178,25 @@
                             <div class="max-w-full px-3 w-1/2 lg:flex-none">
                                 <div class="flex flex-col h-full">
 
-                                    <h6 class="font-bold leading-tight uppercase text-size-xs text-slate-500">Phone
-                                        number
+                                    <h6 class="font-bold leading-tight uppercase text-size-xs text-slate-500">{{ __('Phone number') }}
                                     </h6>
 
                                     <div class="mb-4">
                                         <input wire:model.blur="user.phone" type="phone"
                                             class="text-size-sm focus:shadow-soft-primary-outline leading-5.6 ease-soft block w-full appearance-none rounded-lg border border-solid border-gray-300 bg-white bg-clip-padding py-2 px-3 font-normal text-gray-700 transition-all focus:border-fuchsia-300 focus:bg-white focus:text-gray-700 focus:outline-none focus:transition-shadow"
-                                            placeholder="Phone number" id="phone" required />
+                                            placeholder="{{ __('Phone number') }}" id="phone" required />
                                         @error('user.phone') <p class="text-size-sm text-red-500">{{ $message }}</p>
                                         @enderror
 
                                     </div>
 
-                                    <h6 class="font-bold leading-tight uppercase text-size-xs text-slate-500">Location
+                                    <h6 class="font-bold leading-tight uppercase text-size-xs text-slate-500">{{ __('Location') }}
                                     </h6>
 
                                     <div class="mb-4">
                                         <input wire:model.blur="user.location" type="text"
                                             class="text-size-sm focus:shadow-soft-primary-outline leading-5.6 ease-soft block w-full appearance-none rounded-lg border border-solid border-gray-300 bg-white bg-clip-padding py-2 px-3 font-normal text-gray-700 transition-all focus:border-fuchsia-300 focus:bg-white focus:text-gray-700 focus:outline-none focus:transition-shadow"
-                                            placeholder="Location" id="user-location" required />
+                                            placeholder="{{ __('Location') }}" id="user-location" required />
                                         @error('user.location') <p class="text-size-sm text-red-500">{{ $message }}</p>
                                         @enderror
 
@@ -208,12 +207,12 @@
 
                         </div>
 
-                        <h6 class="font-bold leading-tight uppercase text-size-xs text-slate-500">About Me</h6>
+                        <h6 class="font-bold leading-tight uppercase text-size-xs text-slate-500">{{ __('About Me') }}</h6>
 
                         <div class="mb-4">
                             <textarea wire:model.blur="user.about" rows="4"
                                 class="text-size-sm focus:shadow-soft-primary-outline leading-5.6 ease-soft block w-full appearance-none rounded-lg border border-solid border-gray-300 bg-white bg-clip-padding py-2 px-3 font-normal text-gray-700 transition-all focus:border-fuchsia-300 focus:bg-white focus:text-gray-700 focus:outline-none focus:transition-shadow"
-                                placeholder="Say something about yourself" id="user-about">  </textarea>
+                                placeholder="{{ __('Say something about yourself') }}" id="user-about">  </textarea>
                             @error('user.about') <p class="text-size-sm text-red-500">{{ $message }}</p> @enderror
 
 
@@ -222,7 +221,7 @@
 
                             <button type="submit"
                                 class="float-right inline-block px-6 py-3 mt-6 mb-2 font-bold text-center text-white uppercase align-middle transition-all bg-transparent border-0 rounded-lg cursor-pointer active:opacity-85 hover:scale-102 hover:shadow-soft-xs leading-pro text-size-xs ease-soft-in tracking-tight-soft shadow-soft-md bg-150 bg-x-25 bg-gradient-dark-gray hover:border-slate-700 hover:bg-slate-700 hover:text-white">
-                                Save changes</button>
+                                {{ __('Save changes') }}</button>
 
                         </div>
 

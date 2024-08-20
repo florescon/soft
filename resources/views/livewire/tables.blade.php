@@ -1,497 +1,102 @@
-<div>
-  <!-- table 1 -->
-
-  <div class="flex flex-wrap -mx-3">
-    <div class="flex-none w-full max-w-full px-3">
-      <div
-        class="relative flex flex-col min-w-0 mb-6 break-words bg-white border-0 border-transparent border-solid shadow-soft-xl rounded-2xl bg-clip-border">
-        <div class="p-6 pb-0 mb-0 bg-white border-b-0 border-b-solid rounded-t-2xl border-b-transparent">
-          <h6>Authors table</h6>
+<div class="w-full max-w-full px-3 flex-0">
+    <div class="relative flex flex-col min-w-0 break-words bg-white border-0 dark:bg-gray-950 dark:shadow-soft-dark-xl shadow-soft-xl rounded-2xl bg-clip-border">
+        <div class="pt-6 pr-6 pl-6 mb-0 rounded-t-2xl">
+            <h5 class="dark:text-white">{{ __('Table Management') }}</h5>
+            <p class="dark:text-white"> {{ __('Here you can manage tables.') }} </p>
         </div>
-        <div class="flex-auto px-0 pt-0 pb-2">
-          <div class="p-0 overflow-x-auto">
-            <table class="items-center w-full mb-0 align-top border-gray-200 text-slate-500">
-              <thead class="align-bottom">
-                <tr>
-                  <th
-                    class="px-6 py-3 font-bold text-left uppercase align-middle bg-transparent border-b border-gray-200 shadow-none text-size-xxs border-b-solid tracking-none whitespace-nowrap text-slate-400 opacity-70">
-                    Author</th>
-                  <th
-                    class="px-6 py-3 pl-2 font-bold text-left uppercase align-middle bg-transparent border-b border-gray-200 shadow-none text-size-xxs border-b-solid tracking-none whitespace-nowrap text-slate-400 opacity-70">
-                    Function</th>
-                  <th
-                    class="px-6 py-3 font-bold text-center uppercase align-middle bg-transparent border-b border-gray-200 shadow-none text-size-xxs border-b-solid tracking-none whitespace-nowrap text-slate-400 opacity-70">
-                    Status</th>
-                  <th
-                    class="px-6 py-3 font-bold text-center uppercase align-middle bg-transparent border-b border-gray-200 shadow-none text-size-xxs border-b-solid tracking-none whitespace-nowrap text-slate-400 opacity-70">
-                    Employed</th>
-                  <th
-                    class="px-6 py-3 font-semibold capitalize align-middle bg-transparent border-b border-gray-200 border-solid shadow-none tracking-none whitespace-nowrap text-slate-400 opacity-70">
-                  </th>
-                </tr>
-              </thead>
-              <tbody>
-                <tr>
-                  <td class="p-2 align-middle bg-transparent border-b whitespace-nowrap shadow-transparent">
-                    <div class="flex px-2 py-1">
-                      <div>
-                        <img src="../assets/img/team-2.jpg"
-                          class="inline-flex items-center justify-center mr-4 text-white transition-all duration-200 ease-soft-in-out text-size-sm h-9 w-9 rounded-xl"
-                          alt="user1" />
-                      </div>
-                      <div class="flex flex-col justify-center">
-                        <h6 class="mb-0 leading-normal text-size-sm">John Michael</h6>
-                        <p class="mb-0 leading-tight text-size-xs text-slate-400">john@creative-tim.com</p>
-                      </div>
-                    </div>
-                  </td>
-                  <td class="p-2 align-middle bg-transparent border-b whitespace-nowrap shadow-transparent">
-                    <p class="mb-0 font-semibold leading-tight text-size-xs">Manager</p>
-                    <p class="mb-0 leading-tight text-size-xs text-slate-400">Organization</p>
-                  </td>
-                  <td
-                    class="p-2 leading-normal text-center align-middle bg-transparent border-b text-size-sm whitespace-nowrap shadow-transparent">
-                    <span
-                      class="bg-gradient-lime px-3.6-em text-size-xs-em rounded-1.8 py-2.2-em inline-block whitespace-nowrap text-center align-baseline font-bold uppercase leading-none text-white">Online</span>
-                  </td>
-                  <td class="p-2 text-center align-middle bg-transparent border-b whitespace-nowrap shadow-transparent">
-                    <span class="font-semibold leading-tight text-size-xs text-slate-400">23/04/18</span>
-                  </td>
-                  <td class="p-2 align-middle bg-transparent border-b whitespace-nowrap shadow-transparent">
-                    <a href="javascript:;" class="font-semibold leading-tight text-size-xs text-slate-400"> Edit </a>
-                  </td>
-                </tr>
-                <tr>
-                  <td class="p-2 align-middle bg-transparent border-b whitespace-nowrap shadow-transparent">
-                    <div class="flex px-2 py-1">
-                      <div>
-                        <img src="../assets/img/team-3.jpg"
-                          class="inline-flex items-center justify-center mr-4 text-white transition-all duration-200 ease-soft-in-out text-size-sm h-9 w-9 rounded-xl"
-                          alt="user2" />
-                      </div>
-                      <div class="flex flex-col justify-center">
-                        <h6 class="mb-0 leading-normal text-size-sm">Alexa Liras</h6>
-                        <p class="mb-0 leading-tight text-size-xs text-slate-400">alexa@creative-tim.com</p>
-                      </div>
-                    </div>
-                  </td>
-                  <td class="p-2 align-middle bg-transparent border-b whitespace-nowrap shadow-transparent">
-                    <p class="mb-0 font-semibold leading-tight text-size-xs">Programator</p>
-                    <p class="mb-0 leading-tight text-size-xs text-slate-400">Developer</p>
-                  </td>
-                  <td
-                    class="p-2 leading-normal text-center align-middle bg-transparent border-b text-size-sm whitespace-nowrap shadow-transparent">
-                    <span
-                      class="bg-gradient-slate px-3.6-em text-size-xs-em rounded-1.8 py-2.2-em inline-block whitespace-nowrap text-center align-baseline font-bold uppercase leading-none text-white">Offline</span>
-                  </td>
-                  <td class="p-2 text-center align-middle bg-transparent border-b whitespace-nowrap shadow-transparent">
-                    <span class="font-semibold leading-tight text-size-xs text-slate-400">11/01/19</span>
-                  </td>
-                  <td class="p-2 align-middle bg-transparent border-b whitespace-nowrap shadow-transparent">
-                    <a href="javascript:;" class="font-semibold leading-tight text-size-xs text-slate-400"> Edit </a>
-                  </td>
-                </tr>
-                <tr>
-                  <td class="p-2 align-middle bg-transparent border-b whitespace-nowrap shadow-transparent">
-                    <div class="flex px-2 py-1">
-                      <div>
-                        <img src="../assets/img/team-4.jpg"
-                          class="inline-flex items-center justify-center mr-4 text-white transition-all duration-200 ease-soft-in-out text-size-sm h-9 w-9 rounded-xl"
-                          alt="user3" />
-                      </div>
-                      <div class="flex flex-col justify-center">
-                        <h6 class="mb-0 leading-normal text-size-sm">Laurent Perrier</h6>
-                        <p class="mb-0 leading-tight text-size-xs text-slate-400">laurent@creative-tim.com</p>
-                      </div>
-                    </div>
-                  </td>
-                  <td class="p-2 align-middle bg-transparent border-b whitespace-nowrap shadow-transparent">
-                    <p class="mb-0 font-semibold leading-tight text-size-xs">Executive</p>
-                    <p class="mb-0 leading-tight text-size-xs text-slate-400">Projects</p>
-                  </td>
-                  <td
-                    class="p-2 leading-normal text-center align-middle bg-transparent border-b text-size-sm whitespace-nowrap shadow-transparent">
-                    <span
-                      class="bg-gradient-lime px-3.6-em text-size-xs-em rounded-1.8 py-2.2-em inline-block whitespace-nowrap text-center align-baseline font-bold uppercase leading-none text-white">Online</span>
-                  </td>
-                  <td class="p-2 text-center align-middle bg-transparent border-b whitespace-nowrap shadow-transparent">
-                    <span class="font-semibold leading-tight text-size-xs text-slate-400">19/09/17</span>
-                  </td>
-                  <td class="p-2 align-middle bg-transparent border-b whitespace-nowrap shadow-transparent">
-                    <a href="javascript:;" class="font-semibold leading-tight text-size-xs text-slate-400"> Edit </a>
-                  </td>
-                </tr>
-                <tr>
-                  <td class="p-2 align-middle bg-transparent border-b whitespace-nowrap shadow-transparent">
-                    <div class="flex px-2 py-1">
-                      <div>
-                        <img src="../assets/img/team-3.jpg"
-                          class="inline-flex items-center justify-center mr-4 text-white transition-all duration-200 ease-soft-in-out text-size-sm h-9 w-9 rounded-xl"
-                          alt="user4" />
-                      </div>
-                      <div class="flex flex-col justify-center">
-                        <h6 class="mb-0 leading-normal text-size-sm">Michael Levi</h6>
-                        <p class="mb-0 leading-tight text-size-xs text-slate-400">michael@creative-tim.com</p>
-                      </div>
-                    </div>
-                  </td>
-                  <td class="p-2 align-middle bg-transparent border-b whitespace-nowrap shadow-transparent">
-                    <p class="mb-0 font-semibold leading-tight text-size-xs">Programator</p>
-                    <p class="mb-0 leading-tight text-size-xs text-slate-400">Developer</p>
-                  </td>
-                  <td
-                    class="p-2 leading-normal text-center align-middle bg-transparent border-b text-size-sm whitespace-nowrap shadow-transparent">
-                    <span
-                      class="bg-gradient-lime px-3.6-em text-size-xs-em rounded-1.8 py-2.2-em inline-block whitespace-nowrap text-center align-baseline font-bold uppercase leading-none text-white">Online</span>
-                  </td>
-                  <td class="p-2 text-center align-middle bg-transparent border-b whitespace-nowrap shadow-transparent">
-                    <span class="font-semibold leading-tight text-size-xs text-slate-400">24/12/08</span>
-                  </td>
-                  <td class="p-2 align-middle bg-transparent border-b whitespace-nowrap shadow-transparent">
-                    <a href="javascript:;" class="font-semibold leading-tight text-size-xs text-slate-400"> Edit </a>
-                  </td>
-                </tr>
-                <tr>
-                  <td class="p-2 align-middle bg-transparent border-b whitespace-nowrap shadow-transparent">
-                    <div class="flex px-2 py-1">
-                      <div>
-                        <img src="../assets/img/team-2.jpg"
-                          class="inline-flex items-center justify-center mr-4 text-white transition-all duration-200 ease-soft-in-out text-size-sm h-9 w-9 rounded-xl"
-                          alt="user5" />
-                      </div>
-                      <div class="flex flex-col justify-center">
-                        <h6 class="mb-0 leading-normal text-size-sm">Richard Gran</h6>
-                        <p class="mb-0 leading-tight text-size-xs text-slate-400">richard@creative-tim.com</p>
-                      </div>
-                    </div>
-                  </td>
-                  <td class="p-2 align-middle bg-transparent border-b whitespace-nowrap shadow-transparent">
-                    <p class="mb-0 font-semibold leading-tight text-size-xs">Manager</p>
-                    <p class="mb-0 leading-tight text-size-xs text-slate-400">Executive</p>
-                  </td>
-                  <td
-                    class="p-2 leading-normal text-center align-middle bg-transparent border-b text-size-sm whitespace-nowrap shadow-transparent">
-                    <span
-                      class="bg-gradient-slate px-3.6-em text-size-xs-em rounded-1.8 py-2.2-em inline-block whitespace-nowrap text-center align-baseline font-bold uppercase leading-none text-white">Offline</span>
-                  </td>
-                  <td class="p-2 text-center align-middle bg-transparent border-b whitespace-nowrap shadow-transparent">
-                    <span class="font-semibold leading-tight text-size-xs text-slate-400">04/10/21</span>
-                  </td>
-                  <td class="p-2 align-middle bg-transparent border-b whitespace-nowrap shadow-transparent">
-                    <a href="javascript:;" class="font-semibold leading-tight text-size-xs text-slate-400"> Edit </a>
-                  </td>
-                </tr>
-                <tr>
-                  <td class="p-2 align-middle bg-transparent border-b-0 whitespace-nowrap shadow-transparent">
-                    <div class="flex px-2 py-1">
-                      <div>
-                        <img src="../assets/img/team-4.jpg"
-                          class="inline-flex items-center justify-center mr-4 text-white transition-all duration-200 ease-soft-in-out text-size-sm h-9 w-9 rounded-xl"
-                          alt="user6" />
-                      </div>
-                      <div class="flex flex-col justify-center">
-                        <h6 class="mb-0 leading-normal text-size-sm">Miriam Eric</h6>
-                        <p class="mb-0 leading-tight text-size-xs text-slate-400">miriam@creative-tim.com</p>
-                      </div>
-                    </div>
-                  </td>
-                  <td class="p-2 align-middle bg-transparent border-b-0 whitespace-nowrap shadow-transparent">
-                    <p class="mb-0 font-semibold leading-tight text-size-xs">Programtor</p>
-                    <p class="mb-0 leading-tight text-size-xs text-slate-400">Developer</p>
-                  </td>
-                  <td
-                    class="p-2 leading-normal text-center align-middle bg-transparent border-b-0 text-size-sm whitespace-nowrap shadow-transparent">
-                    <span
-                      class="bg-gradient-slate px-3.6-em text-size-xs-em rounded-1.8 py-2.2-em inline-block whitespace-nowrap text-center align-baseline font-bold uppercase leading-none text-white">Offline</span>
-                  </td>
-                  <td
-                    class="p-2 text-center align-middle bg-transparent border-b-0 whitespace-nowrap shadow-transparent">
-                    <span class="font-semibold leading-tight text-size-xs text-slate-400">14/09/20</span>
-                  </td>
-                  <td class="p-2 align-middle bg-transparent border-b-0 whitespace-nowrap shadow-transparent">
-                    <a href="javascript:;" class="font-semibold leading-tight text-size-xs text-slate-400"> Edit </a>
-                  </td>
-                </tr>
-              </tbody>
+        <div class="my-auto ml-auto pr-6">
+            <a href="{{ route('table-create') }}"><button type="button" class="inline-block px-8 py-2 m-0 text-xs font-bold text-center text-white uppercase align-middle transition-all border-0 rounded-lg cursor-pointer ease-soft-in leading-pro tracking-tight-soft bg-gradient-fuchsia shadow-soft-md bg-150 bg-x-25 hover:scale-102 active:opacity-85">+&nbsp;
+            {{ __('Add Table') }}</button></a>
+        </div>
+        <div class="overflow-x-auto">
+            <div class="mb-4 flex justify-between pl-6 pr-6 pt-4">
+                <div class="flex flex-row items-center">
+                    <p class="text-size-sm mt-3 mr-2">{{ __('Show') }}</p>
+                    <select wire:model.live="perPage" class="text-size-sm focus:shadow-soft-primary-outline dark:bg-gray-950 dark:placeholder:text-white/80 dark:text-white/80 leading-5.6 ease-soft block rounded-lg border border-solid border-gray-300 bg-white bg-clip-padding py-2 px-3 font-normal text-gray-700 transition-all focus:border-fuchsia-300 focus:bg-white focus:text-gray-700 focus:outline-none focus:transition-shadow" id="entries">
+                        <option value="5">5</option>
+                        <option selected value="10">10</option>
+                        <option value="15">15</option>
+                        <option value="20">20</option>
+                    </select>
+                    <p class="text-size-sm mt-3 ml-2 mr-2">{{ __('entries') }}</p>
+                </div>
+                <div class="relative flex flex-wrap items-stretch transition-all rounded-lg ease-soft" style="max-height: 40.3693px">
+                    <span class="text-size-sm ease-soft leading-5.6 absolute z-50 -ml-px flex h-full items-center whitespace-nowrap rounded-lg rounded-tr-none rounded-br-none border border-r-0 border-transparent bg-transparent py-2 px-2.5 text-center font-normal text-slate-500 transition-all">
+                        <i class="fas fa-search" aria-hidden="true"></i>
+                    </span>
+                    <input wire:model.live="search" maxlength="20" type="text" class="pl-9 text-size-sm focus:shadow-soft-primary-outline dark:bg-gray-950 dark:placeholder:text-white/80 dark:text-white/80 ease-soft w-1/100 leading-5.6 relative -ml-px block min-w-0 flex-auto rounded-lg border border-solid border-gray-300 bg-white bg-clip-padding py-2 pr-3 text-gray-700 transition-all placeholder:text-gray-500 focus:border-fuchsia-300 focus:outline-none focus:transition-shadow" placeholder="{{ __('Search') }}..." />
+                </div>
+            </div>
+            <table class="items-center w-full mb-4 align-top border-gray-200 text-slate-500 dark:border-white/40">
+                <thead class="align-bottom">
+                    <tr>
+                        <th wire:click="sortBy('id')" :direction="$sortField === 'id' ? $sortDirection : null" class="px-6 py-3 font-bold text-left uppercase align-middle bg-transparent border-b border-gray-200 shadow-none text-size-xxs border-b-solid tracking-none whitespace-nowrap text-slate-400 opacity-70 dark:border-white/40 dark:text-white dark:opacity-80">
+                            ID<span><i class="fas fa-sort cursor-pointer ml-1 dark:text-white/80" aria-hidden="true"></i></span>
+                        </th>
+                        <th wire:click="sortBy('name')" :direction="$sortField === 'name' ? $sortDirection : null" class="px-6 py-3 pl-2 font-bold text-left uppercase bg-transparent border-b border-gray-200 shadow-none text-size-xxs border-b-solid tracking-none whitespace-nowrap text-slate-400 opacity-70 dark:border-white/40 dark:text-white dark:opacity-80">
+                            {{ __('Name') }}<span><i class="fas fa-sort cursor-pointer ml-1 dark:text-white/80" aria-hidden="true"></i></span>
+                        </th>
+                        <th wire:click="sortBy('description')" :direction="$sortField === 'description' ? $sortDirection : null" class="px-6 py-3 font-bold text-left uppercase align-middle bg-transparent border-b border-gray-200 shadow-none text-size-xxs border-b-solid tracking-none whitespace-nowrap text-slate-400 opacity-70 dark:border-white/40 dark:text-white dark:opacity-80">
+                            {{ __('Description') }}<span><i class="fas fa-sort cursor-pointer ml-1 dark:text-white/80" aria-hidden="true"></i></span>
+                        </th>
+                        <th wire:click="sortBy('created_at')" :direction="$sortField === 'created_at' ? $sortDirection : null" class="px-6 py-3 font-bold text-center uppercase align-middle bg-transparent border-b border-gray-200 shadow-none text-size-xxs border-b-solid tracking-none whitespace-nowrap text-slate-400 opacity-70 dark:border-white/40 dark:text-white dark:opacity-80">
+                            {{ __('Creation Date') }}<span><i class="fas fa-sort cursor-pointer ml-1 dark:text-white/80" aria-hidden="true"></i></span>
+                        </th>
+                        <th class="px-6 py-3 font-bold text-center uppercase align-middle bg-transparent border-b border-gray-200 shadow-none text-size-xxs border-b-solid tracking-none whitespace-nowrap text-slate-400 opacity-70 dark:border-white/40 dark:text-white dark:opacity-80">
+                            {{ __('Action') }}
+                        </th>
+                    </tr>
+                </thead>
+                <tbody class="border-t-2 border-current border-solid dark:border-white/40">
+                    @forelse($tables as $table)
+                        <tr wire:key="row-{{ $table->id }}">
+                            <td class="pl-6 align-middle bg-transparent border-b whitespace-nowrap shadow-transparent dark:border-white/40">
+                                <p class="mb-0 font-semibold leading-tight text-size-xs text-slate-400 dark:text-white/80">
+                                {{ $table->id }}</p>
+                            </td>
+                            <td class="p-2 align-middle bg-transparent border-b whitespace-nowrap shadow-transparent dark:border-white/40">
+                                <p class="mb-0 font-semibold leading-tight text-size-xs text-slate-400 dark:text-white/80">
+                                {{ $table->name }}</p>
+                            </td>
+                            <td class="pl-6 align-middle bg-transparent border-b whitespace-nowrap shadow-transparent dark:border-white/40">
+                                <p class="mb-0 font-semibold leading-tight text-size-xs text-slate-400 dark:text-white/80">
+                                Stay in touch with the latest trends</p>
+                            </td>
+                            <td class="p-2 text-center align-middle bg-transparent border-b whitespace-nowrap shadow-transparent dark:border-white/40">
+                                <p class="mb-0 font-semibold leading-tight text-size-xs text-slate-400 dark:text-white/80">
+                                {{ $table->created_at_for_humans }}</p>
+                            </td>
+                            <td class="p-2 text-center align-middle bg-transparent border-b whitespace-nowrap shadow-transparent dark:border-white/40">
+                                <p class="mb-0 font-semibold leading-tight text-base">
+                                    <a rel="tooltip" href="{{ route('table-edit', $table->id) }}">
+                                        <svg class="h-8 w-6 text-blue-500"  viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">  <path stroke="none" d="M0 0h24v24H0z"/>  <path d="M9 7 h-3a2 2 0 0 0 -2 2v9a2 2 0 0 0 2 2h9a2 2 0 0 0 2 -2v-3" />  <path d="M9 15h3l8.5 -8.5a1.5 1.5 0 0 0 -3 -3l-8.5 8.5v3" />  <line x1="16" y1="5" x2="19" y2="8" /></svg>
+                                    </a>
+                                    <button type="button" onclick="confirm('Are you sure you want to delete this table?') || event.stopImmediatePropagation()" wire:click="destroy({{ $table->id }})">
+                                        <svg class="h-8 w-6 text-red-500"  width="24" height="20" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">  <path stroke="none" d="M0 0h24v24H0z"/>  <line x1="4" y1="7" x2="20" y2="7" />  <line x1="10" y1="11" x2="10" y2="17" />  <line x1="14" y1="11" x2="14" y2="17" />  <path d="M5 7l1 12a2 2 0 0 0 2 2h8a2 2 0 0 0 2 -2l1 -12" />  <path d="M9 7v-3a1 1 0 0 1 1 -1h4a1 1 0 0 1 1 1v3" /></svg>    
+                                    </button>
+                                </p>
+                            </td>
+                        </tr>
+                    @empty
+                        <tr class="w-full left-0 bg-gray-100 p-2 -bottom-10">
+                            <td colspan="5" class="p-2 text-center align-middle bg-transparent border-b whitespace-nowrap shadow-transparent dark:border-white/40">
+                                <p class="mb-0 font-semibold leading-tight text-size-xs text-slate-400 dark:text-white/80">
+                                    {{ __('No data') }} 
+
+                                    <svg class="h-8 w-6 text-red-500"  fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.172 16.172a4 4 0 015.656 0M9 10h.01M15 10h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/>
+                                    </svg>
+
+                                </p>
+                            </td>
+                        </tr>
+                    @endforelse
+                </tbody>
             </table>
-          </div>
+
+            <div class="p-4">
+                {{ $tables->links() }}
+            </div>
         </div>
-      </div>
     </div>
-  </div>
-
-  <!-- card 2 -->
-
-  <div class="flex flex-wrap -mx-3">
-    <div class="flex-none w-full max-w-full px-3">
-      <div
-        class="relative flex flex-col min-w-0 mb-6 break-words bg-white border-0 border-transparent border-solid shadow-soft-xl rounded-2xl bg-clip-border">
-        <div class="p-6 pb-0 mb-0 bg-white border-b-0 border-b-solid rounded-t-2xl border-b-transparent">
-          <h6>Projects table</h6>
-        </div>
-        <div class="flex-auto px-0 pt-0 pb-2">
-          <div class="p-0 overflow-x-auto">
-            <table class="items-center justify-center w-full mb-0 align-top border-gray-200 text-slate-500">
-              <thead class="align-bottom">
-                <tr>
-                  <th
-                    class="px-6 py-3 font-bold text-left uppercase align-middle bg-transparent border-b border-gray-200 shadow-none text-size-xxs border-b-solid tracking-none whitespace-nowrap text-slate-400 opacity-70">
-                    Project</th>
-                  <th
-                    class="px-6 py-3 pl-2 font-bold text-left uppercase align-middle bg-transparent border-b border-gray-200 shadow-none text-size-xxs border-b-solid tracking-none whitespace-nowrap text-slate-400 opacity-70">
-                    Budget</th>
-                  <th
-                    class="px-6 py-3 pl-2 font-bold text-left uppercase align-middle bg-transparent border-b border-gray-200 shadow-none text-size-xxs border-b-solid tracking-none whitespace-nowrap text-slate-400 opacity-70">
-                    Status</th>
-                  <th
-                    class="px-6 py-3 pl-2 font-bold text-center uppercase align-middle bg-transparent border-b border-gray-200 shadow-none text-size-xxs border-b-solid tracking-none whitespace-nowrap text-slate-400 opacity-70">
-                    Completion</th>
-                  <th
-                    class="px-6 py-3 font-semibold capitalize align-middle bg-transparent border-b border-gray-200 border-solid shadow-none tracking-none whitespace-nowrap">
-                  </th>
-                </tr>
-              </thead>
-              <tbody>
-                <tr>
-                  <td class="p-2 align-middle bg-transparent border-b whitespace-nowrap shadow-transparent">
-                    <div class="flex px-2">
-                      <div>
-                        <img src="../assets/img/small-logos/logo-spotify.svg"
-                          class="inline-flex items-center justify-center mr-2 text-white transition-all duration-200 rounded-full ease-soft-in-out text-size-sm h-9 w-9"
-                          alt="spotify" />
-                      </div>
-                      <div class="my-auto">
-                        <h6 class="mb-0 leading-normal text-size-sm">Spotify</h6>
-                      </div>
-                    </div>
-                  </td>
-                  <td class="p-2 align-middle bg-transparent border-b whitespace-nowrap shadow-transparent">
-                    <p class="mb-0 font-semibold leading-normal text-size-sm">$2,500</p>
-                  </td>
-                  <td class="p-2 align-middle bg-transparent border-b whitespace-nowrap shadow-transparent">
-                    <span class="font-semibold leading-tight text-size-xs">working</span>
-                  </td>
-                  <td class="p-2 text-center align-middle bg-transparent border-b whitespace-nowrap shadow-transparent">
-                    <div class="flex items-center justify-center">
-                      <span class="mr-2 font-semibold leading-tight text-size-xs">60%</span>
-                      <div>
-                        <div class="text-size-xs h-0.75 w-30 m-0 flex overflow-visible rounded-lg bg-gray-200">
-                          <div
-                            class="duration-600 ease-soft bg-gradient-cyan -mt-0.38 -ml-px flex h-1.5 w-3/5 flex-col justify-center overflow-hidden whitespace-nowrap rounded bg-fuchsia-500 text-center text-white transition-all"
-                            role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100"></div>
-                        </div>
-                      </div>
-                    </div>
-                  </td>
-                  <td class="p-2 align-middle bg-transparent border-b whitespace-nowrap shadow-transparent">
-                    <button
-                      class="inline-block px-6 py-3 mb-0 font-bold text-center uppercase align-middle transition-all bg-transparent border-0 rounded-lg shadow-none leading-pro text-size-xs ease-soft-in bg-150 tracking-tight-soft bg-x-25 text-slate-400">
-                      <i class="leading-tight fa fa-ellipsis-v text-size-xs"></i>
-                    </button>
-                  </td>
-                </tr>
-                <tr>
-                  <td class="p-2 align-middle bg-transparent border-b whitespace-nowrap shadow-transparent">
-                    <div class="flex px-2">
-                      <div>
-                        <img src="../assets/img/small-logos/logo-invision.svg"
-                          class="inline-flex items-center justify-center mr-2 text-white transition-all duration-200 rounded-full ease-soft-in-out text-size-sm h-9 w-9"
-                          alt="invision" />
-                      </div>
-                      <div class="my-auto">
-                        <h6 class="mb-0 leading-normal text-size-sm">Invision</h6>
-                      </div>
-                    </div>
-                  </td>
-                  <td class="p-2 align-middle bg-transparent border-b whitespace-nowrap shadow-transparent">
-                    <p class="mb-0 font-semibold leading-normal text-size-sm">$5,000</p>
-                  </td>
-                  <td class="p-2 align-middle bg-transparent border-b whitespace-nowrap shadow-transparent">
-                    <span class="font-semibold leading-tight text-size-xs">done</span>
-                  </td>
-                  <td class="p-2 text-center align-middle bg-transparent border-b whitespace-nowrap shadow-transparent">
-                    <div class="flex items-center justify-center">
-                      <span class="mr-2 font-semibold leading-tight text-size-xs">100%</span>
-                      <div>
-                        <div class="text-size-xs h-0.75 w-30 m-0 flex overflow-visible rounded-lg bg-gray-200">
-                          <div
-                            class="duration-600 ease-soft bg-gradient-lime -mt-0.38 -ml-px flex h-1.5 w-full flex-col justify-center overflow-hidden whitespace-nowrap rounded bg-fuchsia-500 text-center text-white transition-all"
-                            role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
-                        </div>
-                      </div>
-                    </div>
-                  </td>
-                  <td class="p-2 align-middle bg-transparent border-b whitespace-nowrap shadow-transparent">
-                    <button
-                      class="inline-block px-6 py-3 mb-0 font-bold text-center uppercase align-middle transition-all bg-transparent border-0 rounded-lg shadow-none leading-pro text-size-xs ease-soft-in bg-150 tracking-tight-soft bg-x-25 text-slate-400"
-                      aria-haspopup="true" aria-expanded="false">
-                      <i class="leading-tight fa fa-ellipsis-v text-size-xs"></i>
-                    </button>
-                  </td>
-                </tr>
-                <tr>
-                  <td class="p-2 align-middle bg-transparent border-b whitespace-nowrap shadow-transparent">
-                    <div class="flex px-2">
-                      <div>
-                        <img src="../assets/img/small-logos/logo-jira.svg"
-                          class="inline-flex items-center justify-center mr-2 text-white transition-all duration-200 rounded-full ease-soft-in-out text-size-sm h-9 w-9"
-                          alt="jira" />
-                      </div>
-                      <div class="my-auto">
-                        <h6 class="mb-0 leading-normal text-size-sm">Jira</h6>
-                      </div>
-                    </div>
-                  </td>
-                  <td class="p-2 align-middle bg-transparent border-b whitespace-nowrap shadow-transparent">
-                    <p class="mb-0 font-semibold leading-normal text-size-sm">$3,400</p>
-                  </td>
-                  <td class="p-2 align-middle bg-transparent border-b whitespace-nowrap shadow-transparent">
-                    <span class="font-semibold leading-tight text-size-xs">canceled</span>
-                  </td>
-                  <td class="p-2 text-center align-middle bg-transparent border-b whitespace-nowrap shadow-transparent">
-                    <div class="flex items-center justify-center">
-                      <span class="mr-2 font-semibold leading-tight text-size-xs">30%</span>
-                      <div>
-                        <div class="text-size-xs h-0.75 w-30 m-0 flex overflow-visible rounded-lg bg-gray-200">
-                          <div
-                            class="duration-600 ease-soft bg-gradient-red -mt-0.38 w-3/10 -ml-px flex h-1.5 flex-col justify-center overflow-hidden whitespace-nowrap rounded bg-fuchsia-500 text-center text-white transition-all"
-                            role="progressbar" aria-valuenow="30" aria-valuemin="0" aria-valuemax="30"></div>
-                        </div>
-                      </div>
-                    </div>
-                  </td>
-                  <td class="p-2 align-middle bg-transparent border-b whitespace-nowrap shadow-transparent">
-                    <button
-                      class="inline-block px-6 py-3 mb-0 font-bold text-center uppercase align-middle transition-all bg-transparent border-0 rounded-lg shadow-none leading-pro text-size-xs ease-soft-in bg-150 tracking-tight-soft bg-x-25 text-slate-400"
-                      aria-haspopup="true" aria-expanded="false">
-                      <i class="leading-tight fa fa-ellipsis-v text-size-xs"></i>
-                    </button>
-                  </td>
-                </tr>
-                <tr>
-                  <td class="p-2 align-middle bg-transparent border-b whitespace-nowrap shadow-transparent">
-                    <div class="flex px-2">
-                      <div>
-                        <img src="../assets/img/small-logos/logo-slack.svg"
-                          class="inline-flex items-center justify-center mr-2 text-white transition-all duration-200 rounded-full ease-soft-in-out text-size-sm h-9 w-9"
-                          alt="slack" />
-                      </div>
-                      <div class="my-auto">
-                        <h6 class="mb-0 leading-normal text-size-sm">Slack</h6>
-                      </div>
-                    </div>
-                  </td>
-                  <td class="p-2 align-middle bg-transparent border-b whitespace-nowrap shadow-transparent">
-                    <p class="mb-0 font-semibold leading-normal text-size-sm">$1,000</p>
-                  </td>
-                  <td class="p-2 align-middle bg-transparent border-b whitespace-nowrap shadow-transparent">
-                    <span class="font-semibold leading-tight text-size-xs">canceled</span>
-                  </td>
-                  <td class="p-2 text-center align-middle bg-transparent border-b whitespace-nowrap shadow-transparent">
-                    <div class="flex items-center justify-center">
-                      <span class="mr-2 font-semibold leading-tight text-size-xs">0%</span>
-                      <div>
-                        <div class="text-size-xs h-0.75 w-30 m-0 flex overflow-visible rounded-lg bg-gray-200">
-                          <div
-                            class="duration-600 ease-soft bg-gradient-lime -mt-0.38 -ml-px flex h-1.5 w-0 flex-col justify-center overflow-hidden whitespace-nowrap rounded bg-fuchsia-500 text-center text-white transition-all"
-                            role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="0"></div>
-                        </div>
-                      </div>
-                    </div>
-                  </td>
-                  <td class="p-2 align-middle bg-transparent border-b whitespace-nowrap shadow-transparent">
-                    <button
-                      class="inline-block px-6 py-3 mb-0 font-bold text-center uppercase align-middle transition-all bg-transparent border-0 rounded-lg shadow-none leading-pro text-size-xs ease-soft-in bg-150 tracking-tight-soft bg-x-25 text-slate-400"
-                      aria-haspopup="true" aria-expanded="false">
-                      <i class="leading-tight fa fa-ellipsis-v text-size-xs"></i>
-                    </button>
-                  </td>
-                </tr>
-                <tr>
-                  <td class="p-2 align-middle bg-transparent border-b whitespace-nowrap shadow-transparent">
-                    <div class="flex px-2">
-                      <div>
-                        <img src="../assets/img/small-logos/logo-webdev.svg"
-                          class="inline-flex items-center justify-center mr-2 text-white transition-all duration-200 rounded-full ease-soft-in-out text-size-sm h-9 w-9"
-                          alt="webdev" />
-                      </div>
-                      <div class="my-auto">
-                        <h6 class="mb-0 leading-normal text-size-sm">Webdev</h6>
-                      </div>
-                    </div>
-                  </td>
-                  <td class="p-2 align-middle bg-transparent border-b whitespace-nowrap shadow-transparent">
-                    <p class="mb-0 font-semibold leading-normal text-size-sm">$14,000</p>
-                  </td>
-                  <td class="p-2 align-middle bg-transparent border-b whitespace-nowrap shadow-transparent">
-                    <span class="font-semibold leading-tight text-size-xs">working</span>
-                  </td>
-                  <td class="p-2 text-center align-middle bg-transparent border-b whitespace-nowrap shadow-transparent">
-                    <div class="flex items-center justify-center">
-                      <span class="mr-2 font-semibold leading-tight text-size-xs">80%</span>
-                      <div>
-                        <div class="text-size-xs h-0.75 w-30 m-0 flex overflow-visible rounded-lg bg-gray-200">
-                          <div
-                            class="duration-600 ease-soft bg-gradient-cyan -mt-0.38 -ml-px flex h-1.5 w-4/5 flex-col justify-center overflow-hidden whitespace-nowrap rounded bg-fuchsia-500 text-center text-white transition-all"
-                            role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="80"></div>
-                        </div>
-                      </div>
-                    </div>
-                  </td>
-                  <td class="p-2 align-middle bg-transparent border-b whitespace-nowrap shadow-transparent">
-                    <button
-                      class="inline-block px-6 py-3 mb-0 font-bold text-center uppercase align-middle transition-all bg-transparent border-0 rounded-lg shadow-none leading-pro text-size-xs ease-soft-in bg-150 tracking-tight-soft bg-x-25 text-slate-400"
-                      aria-haspopup="true" aria-expanded="false">
-                      <i class="leading-tight fa fa-ellipsis-v text-size-xs"></i>
-                    </button>
-                  </td>
-                </tr>
-                <tr>
-                  <td class="p-2 align-middle bg-transparent border-b-0 whitespace-nowrap shadow-transparent">
-                    <div class="flex px-2">
-                      <div>
-                        <img src="../assets/img/small-logos/logo-xd.svg"
-                          class="inline-flex items-center justify-center mr-2 text-white transition-all duration-200 rounded-full ease-soft-in-out text-size-sm h-9 w-9"
-                          alt="xd" />
-                      </div>
-                      <div class="my-auto">
-                        <h6 class="mb-0 leading-normal text-size-sm">Adobe XD</h6>
-                      </div>
-                    </div>
-                  </td>
-                  <td class="p-2 align-middle bg-transparent border-b-0 whitespace-nowrap shadow-transparent">
-                    <p class="mb-0 font-semibold leading-normal text-size-sm">$2,300</p>
-                  </td>
-                  <td class="p-2 align-middle bg-transparent border-b-0 whitespace-nowrap shadow-transparent">
-                    <span class="font-semibold leading-tight text-size-xs">done</span>
-                  </td>
-                  <td
-                    class="p-2 text-center align-middle bg-transparent border-b-0 whitespace-nowrap shadow-transparent">
-                    <div class="flex items-center justify-center">
-                      <span class="mr-2 font-semibold leading-tight text-size-xs">100%</span>
-                      <div>
-                        <div class="text-size-xs h-0.75 w-30 m-0 flex overflow-visible rounded-lg bg-gray-200">
-                          <div
-                            class="duration-600 ease-soft bg-gradient-lime -mt-0.38 -ml-px flex h-1.5 w-full flex-col justify-center overflow-hidden whitespace-nowrap rounded bg-fuchsia-500 text-center text-white transition-all"
-                            role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
-                        </div>
-                      </div>
-                    </div>
-                  </td>
-                  <td class="p-2 align-middle bg-transparent border-b-0 whitespace-nowrap shadow-transparent">
-                    <button
-                      class="inline-block px-6 py-3 mb-0 font-bold text-center uppercase align-middle transition-all bg-transparent border-0 rounded-lg shadow-none leading-pro text-size-xs ease-soft-in bg-150 tracking-tight-soft bg-x-25 text-slate-400"
-                      aria-haspopup="true" aria-expanded="false">
-                      <i class="leading-tight fa fa-ellipsis-v text-size-xs"></i>
-                    </button>
-                  </td>
-                </tr>
-              </tbody>
-            </table>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-
 </div>

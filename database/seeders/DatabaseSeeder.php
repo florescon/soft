@@ -6,6 +6,7 @@ use Illuminate\Database\Seeder;
 use Illuminate\Support\Facades\Hash;
 
 use App\Models\User;
+use App\Models\Category;
 
 class DatabaseSeeder extends Seeder
 {
@@ -17,10 +18,34 @@ class DatabaseSeeder extends Seeder
     public function run()
     {
         User::factory()->create([
-            'name' => 'Alec Thompson',
-            'email' => 'admin@softui.com',
-            'password' => Hash::make('secret'),
-            'about' => "Hi, I’m Alec Thompson, Decisions: If you can’t decide, the answer is no. If two equally difficult paths, choose the one more painful in the short term (pain avoidance is creating an illusion of equality).",
+            'name' => 'Admin',
+            'email' => 'admin@francos.com',
+            'password' => Hash::make('restaurantFrancos2024'),
+            'about' => "Hola, soy Admin. Decisiones: si no puedes decidir, la respuesta es no. Si hay dos caminos igualmente difíciles, elige el más doloroso a corto plazo (evitar el dolor crea una ilusión de igualdad)..",
+        ]);
+
+        Category::create([
+            'name' => 'Entremeses',
+        ]);
+
+        Category::create([
+            'name' => 'Fajitas',
+        ]);
+
+        Category::create([
+            'name' => 'Pastas',
+        ]);
+
+        Category::create([
+            'name' => 'Carnes',
+        ]);
+
+        Category::create([
+            'name' => 'Burritos',
+        ]);
+
+        Category::create([
+            'name' => 'Bebidas',
         ]);
     }
 }

@@ -57,12 +57,15 @@
     "Create a new user": "Crear un nuevo usuario",
     "Full name": "Nombre completo",
     "Enter name": "Ingrese nombre",
+    "Enter description": "Ingrese descripción",
     "Enter email": "Ingrese correo electrónico",
     "Enter password": "Ingrese contraseña",
     "Here you can manage users.": "Aquí puedes gestionar los usuarios",
     "Add User": "Agregar usuario",
     "Creation Date": "Creado",
     "Description": "Descripción",
+    "Price": "Precio",
+    "Category": "Categoría",
 
     "Foods": "Comidas",
     "Food Management": "Panel de Comida",
@@ -82,7 +85,7 @@
 
     "Kitchens": "Cocinas",
     "Kitchen Management": "Panel de Cocinas",
-    "Here you can manage kitchen.": "Aquí puedes gestionar las Cocinas.",
+    "Here you can manage kitchens.": "Aquí puedes gestionar las Cocinas.",
     "Add Kitchen": "Agregar Cocina",
     "Edit Kitchen": "Editar Cocina",
     "Update Kitchen": "Actualizar Cocina",
@@ -96,12 +99,26 @@
     "Update Table": "Actualizar Mesa",
     "Create a new table": "Crear nueva mesa",
 
+    "Image": "Imagen",
+    "Enter price": "Ingresar precio",
+
+    "Are you sure you want to delete this food?": "Seguro que deseas eliminar esta comida?",
     "Zones": "Zonas",
     "Zone Management": "Panel de Zonas",
     "Here you can manage zones.": "Aquí puedes gestionar las zonas.",
     "Add Zone": "Agregar Zonas",
     "Edit Zone": "Editar Zonas",
     "Update Zone": "Actualizar Zonas",
-    "Create a new zone": "Crear nueva zona"
+    "Create a new zone": "Crear nueva zona",
 
+    "User Profile" : "Perfil de Usuario",
+    "Profile Information": "Información del Perfil",
+    "Full name": "Nombre completo",
+    "Edit Profile": "Editar Perfil",
+    "Phone number": "Teléfono",
+    "Location": "Ubicación",
+    "About Me": "Acerca de mí",
+    "Say something about yourself": "Di algo sobre ti",
+    "Save changes": "Guardar cambios",
+    "Your profile information have been successfully saved!": "Tu Información del perfil ha sido actualizada"
 }

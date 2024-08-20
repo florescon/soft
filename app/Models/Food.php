@@ -11,7 +11,19 @@ class Food extends Model
 
     protected $fillable = [
         'name',
+        'price',
+        'image',
+        'description',
+        'category_id',
     ];
+
+    /**
+     * Get the line associated with the Product.
+     */
+    public function category()
+    {
+        return $this->belongsTo(Category::class)->withTrashed();
+    }
 
     public function getCreatedAtForHumansAttribute()
     {

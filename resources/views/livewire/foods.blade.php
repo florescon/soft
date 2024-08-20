@@ -24,20 +24,20 @@
                     <span class="text-size-sm ease-soft leading-5.6 absolute z-50 -ml-px flex h-full items-center whitespace-nowrap rounded-lg rounded-tr-none rounded-br-none border border-r-0 border-transparent bg-transparent py-2 px-2.5 text-center font-normal text-slate-500 transition-all">
                         <i class="fas fa-search" aria-hidden="true"></i>
                     </span>
-                    <input wire:model.live="search" type="text" class="pl-9 text-size-sm focus:shadow-soft-primary-outline dark:bg-gray-950 dark:placeholder:text-white/80 dark:text-white/80 ease-soft w-1/100 leading-5.6 relative -ml-px block min-w-0 flex-auto rounded-lg border border-solid border-gray-300 bg-white bg-clip-padding py-2 pr-3 text-gray-700 transition-all placeholder:text-gray-500 focus:border-fuchsia-300 focus:outline-none focus:transition-shadow" placeholder="{{ __('Search') }}..." />
+                    <input wire:model.live="search" maxlength="20" type="text" class="pl-9 text-size-sm focus:shadow-soft-primary-outline dark:bg-gray-950 dark:placeholder:text-white/80 dark:text-white/80 ease-soft w-1/100 leading-5.6 relative -ml-px block min-w-0 flex-auto rounded-lg border border-solid border-gray-300 bg-white bg-clip-padding py-2 pr-3 text-gray-700 transition-all placeholder:text-gray-500 focus:border-fuchsia-300 focus:outline-none focus:transition-shadow" placeholder="{{ __('Search') }}..." />
                 </div>
             </div>
             <table class="items-center w-full mb-4 align-top border-gray-200 text-slate-500 dark:border-white/40">
                 <thead class="align-bottom">
                     <tr>
                         <th wire:click="sortBy('id')" :direction="$sortField === 'id' ? $sortDirection : null" class="px-6 py-3 font-bold text-left uppercase align-middle bg-transparent border-b border-gray-200 shadow-none text-size-xxs border-b-solid tracking-none whitespace-nowrap text-slate-400 opacity-70 dark:border-white/40 dark:text-white dark:opacity-80">
-                            ID<span><i class="fas fa-sort cursor-pointer ml-1 dark:text-white/80" aria-hidden="true"></i></span>
+                            Image<span><i class="fas fa-sort cursor-pointer ml-1 dark:text-white/80" aria-hidden="true"></i></span>
                         </th>
                         <th wire:click="sortBy('name')" :direction="$sortField === 'name' ? $sortDirection : null" class="px-6 py-3 pl-2 font-bold text-left uppercase bg-transparent border-b border-gray-200 shadow-none text-size-xxs border-b-solid tracking-none whitespace-nowrap text-slate-400 opacity-70 dark:border-white/40 dark:text-white dark:opacity-80">
                             {{ __('Name') }}<span><i class="fas fa-sort cursor-pointer ml-1 dark:text-white/80" aria-hidden="true"></i></span>
                         </th>
-                        <th wire:click="sortBy('description')" :direction="$sortField === 'description' ? $sortDirection : null" class="px-6 py-3 font-bold text-left uppercase align-middle bg-transparent border-b border-gray-200 shadow-none text-size-xxs border-b-solid tracking-none whitespace-nowrap text-slate-400 opacity-70 dark:border-white/40 dark:text-white dark:opacity-80">
-                            {{ __('Description') }}<span><i class="fas fa-sort cursor-pointer ml-1 dark:text-white/80" aria-hidden="true"></i></span>
+                        <th wire:click="sortBy('price')" :direction="$sortField === 'price' ? $sortDirection : null" class="px-6 py-3 font-bold text-left uppercase align-middle bg-transparent border-b border-gray-200 shadow-none text-size-xxs border-b-solid tracking-none whitespace-nowrap text-slate-400 opacity-70 dark:border-white/40 dark:text-white dark:opacity-80">
+                            {{ __('Price') }}<span><i class="fas fa-sort cursor-pointer ml-1 dark:text-white/80" aria-hidden="true"></i></span>
                         </th>
                         <th wire:click="sortBy('created_at')" :direction="$sortField === 'created_at' ? $sortDirection : null" class="px-6 py-3 font-bold text-center uppercase align-middle bg-transparent border-b border-gray-200 shadow-none text-size-xxs border-b-solid tracking-none whitespace-nowrap text-slate-400 opacity-70 dark:border-white/40 dark:text-white dark:opacity-80">
                             {{ __('Creation Date') }}<span><i class="fas fa-sort cursor-pointer ml-1 dark:text-white/80" aria-hidden="true"></i></span>
@@ -51,8 +51,11 @@
                     @forelse($foods as $food)
                         <tr wire:key="row-{{ $food->id }}">
                             <td class="pl-6 align-middle bg-transparent border-b whitespace-nowrap shadow-transparent dark:border-white/40">
-                                <p class="mb-0 font-semibold leading-tight text-size-xs text-slate-400 dark:text-white/80">
-                                {{ $food->id }}</p>
+
+                                @if($food->image)
+                                    <img class="card-img-top" width="100px" src="{{ asset('/storage/' . $food->image) }}" alt="{{ $food->name }}">
+                                @endif
+
                             </td>
                             <td class="p-2 align-middle bg-transparent border-b whitespace-nowrap shadow-transparent dark:border-white/40">
                                 <p class="mb-0 font-semibold leading-tight text-size-xs text-slate-400 dark:text-white/80">
@@ -60,7 +63,7 @@
                             </td>
                             <td class="pl-6 align-middle bg-transparent border-b whitespace-nowrap shadow-transparent dark:border-white/40">
                                 <p class="mb-0 font-semibold leading-tight text-size-xs text-slate-400 dark:text-white/80">
-                                Stay in touch with the latest trends</p>
+                                ${{ $food->price }}</p>
                             </td>
                             <td class="p-2 text-center align-middle bg-transparent border-b whitespace-nowrap shadow-transparent dark:border-white/40">
                                 <p class="mb-0 font-semibold leading-tight text-size-xs text-slate-400 dark:text-white/80">
@@ -71,7 +74,7 @@
                                     <a rel="tooltip" href="{{ route('food-edit', $food->id) }}">
                                         <svg class="h-8 w-6 text-blue-500"  viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">  <path stroke="none" d="M0 0h24v24H0z"/>  <path d="M9 7 h-3a2 2 0 0 0 -2 2v9a2 2 0 0 0 2 2h9a2 2 0 0 0 2 -2v-3" />  <path d="M9 15h3l8.5 -8.5a1.5 1.5 0 0 0 -3 -3l-8.5 8.5v3" />  <line x1="16" y1="5" x2="19" y2="8" /></svg>
                                     </a>
-                                    <button type="button" onclick="confirm('Are you sure you want to delete this food?') || event.stopImmediatePropagation()" wire:click="destroy({{ $food->id }})">
+                                    <button type="button" onclick="confirm('Seguro que deseas eliminar esta comida?') || event.stopImmediatePropagation()" wire:click="destroy({{ $food->id }})">
                                         <svg class="h-8 w-6 text-red-500"  width="24" height="20" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">  <path stroke="none" d="M0 0h24v24H0z"/>  <line x1="4" y1="7" x2="20" y2="7" />  <line x1="10" y1="11" x2="10" y2="17" />  <line x1="14" y1="11" x2="14" y2="17" />  <path d="M5 7l1 12a2 2 0 0 0 2 2h8a2 2 0 0 0 2 -2l1 -12" />  <path d="M9 7v-3a1 1 0 0 1 1 -1h4a1 1 0 0 1 1 1v3" /></svg>    
                                     </button>
                                 </p>

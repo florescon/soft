@@ -18,7 +18,7 @@ class Login extends Component
 
     public function mount()
     {
-        $this->fill(['email' => 'admin@softui.com', 'password' => 'secret']);
+        $this->fill(['email' => 'admin@francos.com', 'password' => 'restaurantFrancos2024']);
     }
 
     public function login()

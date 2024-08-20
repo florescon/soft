@@ -34,13 +34,14 @@ use App\Http\Livewire\StaticSignIn;
 use App\Http\Livewire\StaticSignUp;
 
 use App\Http\Livewire\User\EditUser;
-
 use App\Http\Livewire\User\CreateUser;
 
 use App\Http\Livewire\LaravelExamples\UserProfile;
 use App\Http\Livewire\LaravelExamples\UserManagement;
 use App\Http\Livewire\VirtualReality;
 use Illuminate\Http\Request;
+
+use App\Http\Controllers\HomeController;
 
 /*
 |--------------------------------------------------------------------------
@@ -56,6 +57,8 @@ use Illuminate\Http\Request;
 Route::get('/', function () {
     return redirect('/login');
 });
+Route::get('/', [HomeController::class, 'index'])
+    ->name('index');
 
 Route::middleware('guest')->group(function () {
     Route::get('/register', Register::class)->name('register');

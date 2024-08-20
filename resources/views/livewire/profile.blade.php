@@ -189,7 +189,7 @@
           <div class="p-4 pb-0 mb-0 bg-white border-b-0 rounded-t-2xl">
             <div class="flex flex-wrap -mx-3">
               <div class="flex items-center w-full max-w-full px-3 shrink-0 md:w-8/12 md:flex-none">
-                <h6 class="mb-0">Profile Information</h6>
+                <h6 class="mb-0">{{ __('Profile Information') }}</h6>
               </div>
               <div class="w-full max-w-full px-3 text-right shrink-0 md:w-4/12 md:flex-none">
                 <a href="javascript:;" data-target="tooltip_trigger" data-placement="top">
@@ -197,7 +197,7 @@
                 </a>
                 <div data-target="tooltip"
                   class="hidden px-2 py-1 text-center text-white bg-black rounded-lg text-size-sm" role="tooltip">
-                  Edit Profile
+                  {{ __('Edit Profile') }}
                   <div
                     class="invisible absolute h-2 w-2 bg-inherit before:visible before:absolute before:h-2 before:w-2 before:rotate-45 before:bg-inherit before:content-['']"
                     data-popper-arrow></div>
@@ -213,7 +213,7 @@
             <ul class="flex flex-col pl-0 mb-0 rounded-lg">
               <li
                 class="relative block px-4 py-2 pt-0 pl-0 leading-normal bg-white border-0 rounded-t-lg text-size-sm text-inherit">
-                <strong class="text-slate-700">Full Name:</strong> &nbsp; Alec M. Thompson</li>
+                <strong class="text-slate-700">Full Name:</strong> &nbsp; Alec M. Thompson--</li>
               <li
                 class="relative block px-4 py-2 pl-0 leading-normal bg-white border-0 border-t-0 text-size-sm text-inherit">
                 <strong class="text-slate-700">Mobile:</strong> &nbsp; (44) 123 1234 123</li>

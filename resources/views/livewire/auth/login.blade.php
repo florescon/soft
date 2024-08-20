@@ -9,10 +9,9 @@
                             <div
                                 class="relative flex flex-col min-w-0 mt-32 break-words bg-transparent border-0 shadow-none rounded-2xl bg-clip-border">
                                 <div class="p-6 pb-0 mb-0 bg-transparent border-b-0 rounded-t-2xl">
-                                    <h3 class="relative z-10 font-bold text-transparent bg-gradient-cyan bg-clip-text">
-                                        {{ __('Welcome back!') }}</h3>
-                                    <p class="mb-0">{{ __('Email') }}: <b>admin@softui.com</b></p>
-                                    <p class="mb-0">{{ __('Password') }}: <b>secret</b></p>
+                                    <img src="{{ asset('/img/francos.png') }}" width="200" class="block mx-auto mb-5" alt="">
+                                    <p class="mb-0">{{ __('Email') }}: <b>admin@francos.com</b></p>
+                                    <p class="mb-0">{{ __('Password') }}: <b>restaurantFrancos2024</b></p>
                                 </div>
 
                                 <div class="flex-auto p-6">
@@ -58,7 +57,7 @@
                                                 type="checkbox" id="rememberMe">
                                             <label
                                                 class="mb-2 ml-1 font-normal cursor-pointer select-none text-size-sm text-slate-700"
-                                                for="rememberMe">Remember me</label>
+                                                for="rememberMe">{{ __('Remember Me') }}</label>
 
 
                                         </div>

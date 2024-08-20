@@ -18,12 +18,25 @@
                         {{ __('Name') }}
                     </label>
                     <div class="relative flex flex-wrap items-stretch w-full rounded-lg">
-                        <input wire:model.blur="name" value="{{ $food->name }}" type="text" placeholder="Enter name" class="focus:shadow-soft-primary-outline dark:bg-gray-950 dark:placeholder:text-white/80 dark:text-white/80 text-size-sm leading-5.6 ease-soft block w-full appearance-none rounded-lg border border-solid border-gray-300 bg-white bg-clip-padding px-3 py-2 font-normal text-gray-700 outline-none transition-all placeholder:text-gray-500 focus:border-fuchsia-300 focus:outline-none" required />
+                        <input wire:model.blur="name" value="{{ $food->name }}" type="text" placeholder="{{ __('Enter name') }}" class="focus:shadow-soft-primary-outline dark:bg-gray-950 dark:placeholder:text-white/80 dark:text-white/80 text-size-sm leading-5.6 ease-soft block w-full appearance-none rounded-lg border border-solid border-gray-300 bg-white bg-clip-padding px-3 py-2 font-normal text-gray-700 outline-none transition-all placeholder:text-gray-500 focus:border-fuchsia-300 focus:outline-none" required />
                     </div>
 
                     @error('name') <span class="error text-red-500">{{ $message }}</span> @enderror
 
                 </div>
+
+                <div class="w-6/12 max-w-full px-3 flex-0">
+                    <label class="mb-2 ml-1 font-bold text-size-xs text-slate-700 dark:text-white/80">
+                        {{ __('Price') }}
+                    </label>
+                    <div class="relative flex flex-wrap items-stretch w-full rounded-lg">
+                        <input wire:model.blur="price" value="{{ $food->price }}" type="text" placeholder="{{ __('Enter price') }}" class="focus:shadow-soft-primary-outline dark:bg-gray-950 dark:placeholder:text-white/80 dark:text-white/80 text-size-sm leading-5.6 ease-soft block w-full appearance-none rounded-lg border border-solid border-gray-300 bg-white bg-clip-padding px-3 py-2 font-normal text-gray-700 outline-none transition-all placeholder:text-gray-500 focus:border-fuchsia-300 focus:outline-none" required />
+                    </div>
+
+                    @error('price') <span class="error text-red-500">{{ $message }}</span> @enderror
+
+                </div>
+
                 <div class="flex-auto p-4 pt-0">
                     <button type="submit" class="inline-block float-right px-8 py-2 mt-16 mb-0 font-bold text-right text-white uppercase align-middle transition-all border-0 rounded-lg cursor-pointer hover:scale-102 active:opacity-85 hover:shadow-soft-xs dark:bg-gradient-neutral bg-gradient-dark-gray leading-pro text-size-xs ease-soft-in tracking-tight-soft shadow-soft-md bg-150 bg-x-25">{{ __('Update Food') }}</button>
                 </div>

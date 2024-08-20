@@ -19,6 +19,11 @@ class Foods extends Component
         $this->perPage = 10;
     }
 
+    public function sortBy()
+    {
+
+    }
+
     public function updatedPerPage()
     {
         $this->resetPage();
